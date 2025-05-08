@@ -13,6 +13,7 @@
     background-attachment: fixed;
     padding: 8px 8%;
     overflow: hidden;
+    position: relative;
 
 }
 
@@ -57,6 +58,7 @@ nav ul li a{
     font-size:14px;
     border-radius: 30px;
     border-top-right-radius:0;
+    transition: 0.5s;
 }
 
 .content{
@@ -72,4 +74,32 @@ nav ul li a{
 .content p{
     margin:10px 0 30px;
     color:#333;
+}
+
+.content .btn{
+    padding:15px 80px;
+    font-size: 16px;
+}
+
+.btn:hover{
+    border-top-right-radius: 30px;
+}
+
+.feature-img{
+    width:530px;
+    position: absolute;
+    bottom: 0;
+    right:10%;
+}
+
+.anim{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+}
+@keyframes moveup{
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }
